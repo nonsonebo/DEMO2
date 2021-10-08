@@ -1,0 +1,49 @@
+*{box-sizing: border-box;}
+
+body{font-family: tahoma; font-weight:bold; background-color: tomato;}
+form{
+    position: absolute;
+    top:50%;
+    left:50%;
+
+    /* TRANSFORM */
+    transform: translate(-50%,-50%); 
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+
+    /* ROTATE */
+    /* transform: rotate(-45DEG);
+    -webkit-transform: rotate(-45DEG);
+    -moz-transform:rotate(-45DEG); */
+
+    /* SKEW */
+    /* transform: skew(-45%);
+    -webkit-transform:skew(-45deg);
+    -moz-transform:skew(-45deg);
+  */
+
+         /* SCALE */
+         /* transform: scale(1,1);
+         /* -webkit-transform:scale(3,2); */
+         /* -moz-transform:scale(3,2); */       
+
+}
+
+input[type=email],[type=password]{
+    width: 100%;
+    height: 30px;
+    margin-top:10px;
+}
+
+input[type=email]:focus,[type=password]:focus{ background-color:khaki;
+
+/* transition-property:width;
+transition-duration:2s;
+transition-timing-function: linear; */
+transition: all 1s linear ;
+-webkit-transition: all 1s linear ;
+-moz-transition: all 1s linear ;
+}
+
+
+
